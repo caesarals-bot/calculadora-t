@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" type="image/icon" href="./img/chess_board_icon_187661.ico"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/Display.js" type="" ></script>
+    <script src="./js/Calculadora.js" type="" ></script>
+    <script src="./js/app.js" type="" defer></script>
+</head>
+<body>
+    <header class="header"></header>
+    <div class="container" >
+        <div>
+        <h1>Calculadora</h1>
+        
+            <div class="calculadora">
+                <div class="display">
+                    <div class="anterior" id="valor-anterior">
+                        
+                    </div>
+                    <div class="actual" id="valor-actual">
+                    
+                    </div>
+                </div>
+                <div class="first">
+                    <!-- se le agrega la funcion de borrar al onclick -->
+                    <button onclick="display.borrar()">&larr;</button>
+                    <!-- se agrega borrarTodo al CE -->
+                    <button onclick="display.borrarTodo()" class="col-2">CE</button>
+                    <!-- <button class="numero">%</button> -->
+                </div>
+                <div class="second">
+                    <button class="numero" >7</button>
+                    <button class="numero" >8</button>
+                    <button class="numero" >9</button>
+                    <button class="operador" value="dividir"  >/</button>
+                </div> 
+                <div class= "third">
+                    <button class="numero" >4</button>
+                    <button class="numero" >5</button>
+                    <button class="numero" >6</button>
+                    <button class="operador" value="multiplicar" >*</button>
+                  
+                </div>
+                <div class="fourth">
+                    <button class="numero">1</button>
+                    <button class="numero">2</button>
+                    <button class="numero">3</button>
+                    <button class="operador" value="restar">-</button>
+                    
+                </div>
+                <div class="fifth">
+                   <button class="col-2 numero">0</button>
+                   <!-- <button>+/-</button> -->
+                   <button class="numero">.</button>
+                   <button class="operador" value="sumar" >+</button>
+                   <button class="operador" value="igual" >=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
